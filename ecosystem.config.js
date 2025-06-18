@@ -4,9 +4,9 @@ module.exports = {
     script: './app.ts',
     watch: true,
     exec_mode: 'cluster',
-    interpreter: 'node',    // 使用 Node.js
+    // interpreter: 'node',    // 使用 Node.js
     instances: 'max',
-    // interpreter: './node_modules/.bin/ts-node',
+    interpreter: './node_modules/.bin/ts-node',
     autorestart: true,
     env: {
       NODE_ENV: 'development',
