@@ -1,12 +1,12 @@
 module.exports = {
   apps: [{
     name: 'ws-course',
-    script: './app.ts',
     watch: true,
     exec_mode: 'cluster',
-    // interpreter: 'node',    // 使用 Node.js
+    script: "ts-node", // 使用 ts-node 运行
+    args: "app.ts",    // 你的入口文件
     instances: 'max',
-    interpreter: './node_modules/.bin/ts-node',
+    // interpreter: './node_modules/.bin/ts-node',
     autorestart: true,
     env: {
       NODE_ENV: 'development',
@@ -16,8 +16,8 @@ module.exports = {
       NODE_ENV: 'production',
       TS_NODE_PROJECT: './tsconfig.json',
     },
-    error_file: './logs/yd-app-error.log',
-    out_file: './logs/yd-app-out.log',
+    error_file: './logs/ws-app-error.log',
+    out_file: './logs/ws-app-out.log',
     merge_logs: true,
     log_date_format: 'YYYY-MM-DD HH:mm:ss'
   }],
