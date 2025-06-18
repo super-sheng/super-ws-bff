@@ -76,7 +76,7 @@ declare module 'swig-templates' {
 }
 
 declare module 'koa-swig' {
-  import { Context } from 'koa';
+  import { Context } from 'Koa';
 
   interface KoaSwigOptions {
     /**
