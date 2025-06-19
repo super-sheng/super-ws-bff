@@ -1,6 +1,6 @@
 
 import { join } from 'path'
-import { assignIn } from 'lodash-es'
+import { assignIn } from 'lodash'
 
 let config = {
   viewDir: join(__dirname, '..', 'views'),
