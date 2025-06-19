@@ -4,7 +4,7 @@ addAliases({
   '@config': `${__dirname}/config`,
   '@middlewares': `${__dirname}/middlewares`,
 });
-import Koa from 'Koa'
+import Koa from 'koa'
 import config from '@config/index';
 import serve from 'koa-static'
 import { createContainer, Lifetime } from 'awilix'
