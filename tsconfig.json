@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "ES2024",
     "noImplicitAny": true,
-    "outDir": "dist",
     "noImplicitThis": true,
     "experimentalDecorators": true,
     "esModuleInterop": true,
@@ -10,7 +9,7 @@
     "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
     "typeRoots": [
-      "typings"
+      "/typings"
     ],
     "baseUrl": "./",
     "paths": {
@@ -19,5 +18,5 @@
       "@middlewares/*": ["middlewares/*"]
     }
   },
-  "include": ["**/*"]
+  "include": ["**/*.ts", "*.d.ts"]
 }

@@ -2,10 +2,10 @@ module.exports = {
   apps: [{
     name: 'ws-course',
     watch: false,
-    script: "./dist/app.js",
+    script: "./app.ts",
     instances: 'max',
     exec_mode: 'cluster',
-    interpreter: 'ts-node',  // 使用 ts-node 运行
+    interpreter: './node_modules/.bin/ts-node',  // 使用 ts-node 运行
     autorestart: true,
     env: {
       NODE_ENV: 'development',
