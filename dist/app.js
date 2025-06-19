@@ -37,6 +37,6 @@ app.use((0, awilix_koa_1.scopePerRequest)(container));
 app.use((0, koa_static_1.default)(staticDir));
 app.use((0, koa2_connect_history_api_fallback_1.default)({ index: '/', whiteList: ['/api'] }));
 app.use((0, awilix_koa_1.loadControllers)(`${__dirname}/routers/*.ts`));
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`🚀 server is running at ${port}`);
 });
