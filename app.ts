@@ -41,6 +41,6 @@ app.use(historyApiFallback({ index: '/', whiteList: ['/api'] }))
 
 app.use(loadControllers(`${__dirname}/routers/*.ts`))
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`🚀 server is running at ${port}`);
 })
