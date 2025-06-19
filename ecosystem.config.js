@@ -2,7 +2,7 @@ module.exports = {
   apps: [{
     name: 'ws-course',
     watch: false,
-    script: "./app.ts",
+    script: "./dist/app.js",
     instances: 'max',
     exec_mode: 'cluster',
     interpreter: 'ts-node',  // 使用 ts-node 运行
