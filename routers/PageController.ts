@@ -8,7 +8,6 @@ class PageController {
   @GET()
   async actionList (ctx: Context) {
     const data = await ctx.render('index')
-    console.log('data: ', data);
 
     ctx.body =  data
   }
