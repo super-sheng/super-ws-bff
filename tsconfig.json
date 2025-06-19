@@ -8,9 +8,6 @@
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
-    "typeRoots": [
-      "/typings"
-    ],
     "baseUrl": "./",
     "paths": {
       "@interfaces/*": ["interface/*"],
